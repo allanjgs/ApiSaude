@@ -19,6 +19,11 @@ namespace ApiAuthSaude.Models
 
             return users.FirstOrDefault(x => x.Username == username && x.Password == password) ?? null;
         }
+
+        internal static object Get(object userName, string password)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
