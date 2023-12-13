@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ousing System.Collections.Generic;
 using System.Linq;
 
 
@@ -13,8 +13,8 @@ namespace ApiAuthSaude.Models
         {
             var users = new List<User>
             {
-                new User { Id = 1, Username = "mestre", Password = "mestre", Role = "manager" },
-                new User { Id = 2, Username = "slave", Password = "slave", Role = "employee" }
+                new User { Id = 1, Username = "medico", Password = "medico", Role = "manager" },
+                new User { Id = 2, Username = "paciente", Password = "paciente", Role = "employee" }
             };
 
             return users.FirstOrDefault(x => x.Username == username && x.Password == password) ?? null;
